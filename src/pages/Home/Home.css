@@ -1,0 +1,129 @@
+.home {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 3rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.greeting {
+  display: block;
+  font-size: 1.5rem;
+  color: #B6D094;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #F8F1FF;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #B6D094;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #F8F1FF;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.tech-stack {
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #B6D094;
+  color: #212738;
+}
+
+.btn-primary:hover {
+  background-color: #9cb87d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 2px solid #B6D094;
+  color: #B6D094;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(182, 208, 148, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero-animation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.animation-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #626D58;
+}
+
+/* Apenas a regra de responsividade modificada */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse; /* Inverte a ordem para imagem ficar em cima */
+    text-align: center;
+    padding-top: 1rem;
+    gap: 1.5rem;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .animation-image {
+    max-width: 250px;
+    margin-bottom: 1.5rem;
+  }
+}
