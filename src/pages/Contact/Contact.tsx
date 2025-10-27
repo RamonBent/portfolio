@@ -36,7 +36,7 @@ const Contact = () => {
               <strong>Email:</strong> ramon.bento.oliver@gmail.com
             </li>
             <li>
-              <strong>LinkedIn:</strong> linkedin.com/in/seuuser
+              <strong>LinkedIn:</strong> linkedin.com/in/ramon-bento-oliveira
             </li>
             <li>
               <strong>GitHub:</strong> github.com/RamonBent
