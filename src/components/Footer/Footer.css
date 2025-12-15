@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1D3557; /* Berkeley Blue */
+  background-color: #1D3557;
   padding: 2rem 0;
   margin-top: 3rem;
 }
@@ -22,13 +22,13 @@
 }
 
 .footer-links a {
-  color: #F8F1FF; /* Magnolia */
+  color: #F8F1FF;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: #B6D094; /* Olivine */
+  color: #B6D094;
 }
 
 @media (max-width: 768px) {

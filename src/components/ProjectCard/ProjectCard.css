@@ -1,6 +1,5 @@
-/* Estilo base do card - mantendo sua paleta de cores */
 .project-card {
-  background-color: #1D3557; /* Tom mais claro do Raisin Black para contraste */
+  background-color: #1D3557; 
   border-radius: 10px;
   padding: 1.5rem;
   display: flex;
@@ -10,7 +9,7 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
-  border: 1px solid #626D58; /* Eerie */
+  border: 1px solid #626D58;
 }
 
 .project-card:hover {
@@ -19,18 +18,17 @@
 }
 
 .project-content h3 {
-  color: #B6D094; /* Olivine */
+  color: #B6D094;
   margin-bottom: 0.8rem;
   font-size: 1.4rem;
 }
 
 .project-content p {
-  color: #F8F1FF; /* Magnolia */
+  color: #F8F1FF;
   margin-bottom: 1.2rem;
   line-height: 1.6;
 }
 
-/* Seção de tecnologias - mantendo estilo dos badges */
 .project-technologies {
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +36,6 @@
   margin: 1rem 0;
 }
 
-/* Ações do card - botões */
 .project-actions {
   display: flex;
   gap: 0.8rem;
@@ -55,36 +52,35 @@
 }
 
 .project-details-btn {
-  background-color: #626D58; /* Eerie */
-  color: #F8F1FF; /* Magnolia */
+  background-color: #626D58;
+  color: #F8F1FF;
   border: none;
 }
 
 .project-details-btn:hover {
-  background-color: #B6D094; /* Olivine */
-  color: #212738; /* Raisin Black */
+  background-color: #B6D094;
+  color: #212738;
 }
 
 .project-link {
   background-color: transparent;
-  color: #B6D094; /* Olivine */
-  border: 1px solid #626D58; /* Eerie */
+  color: #B6D094;
+  border: 1px solid #626D58;
   text-decoration: none;
 }
 
 .project-link:hover {
   background-color: rgba(182, 208, 148, 0.1);
-  border-color: #B6D094; /* Olivine */
+  border-color: #B6D094;
 }
 
-/* Modal expandido - mantendo coerência */
 .project-expanded-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(33, 39, 56, 0.9); /* Raisin Black com transparência */
+  background-color: rgba(33, 39, 56, 0.9); 
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
@@ -102,18 +98,18 @@
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  border: 1px solid #626D58; /* Eerie */
+  border: 1px solid #626D58;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 .project-expanded-content h3 {
-  color: #B6D094; /* Olivine */
+  color: #B6D094;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
 
 .project-expanded-description p {
-  color: #F8F1FF; /* Magnolia */
+  color: #F8F1FF;
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
@@ -122,7 +118,7 @@
   margin: 1.5rem 0;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #626D58; /* Eerie */
+  border: 1px solid #626D58;
 }
 
 .project-expanded-image img {
@@ -137,7 +133,7 @@
   right: 1rem;
   background: none;
   border: none;
-  color: #F8F1FF; /* Magnolia */
+  color: #F8F1FF;
   font-size: 1.8rem;
   cursor: pointer;
   transition: color 0.3s;
@@ -145,7 +141,7 @@
 }
 
 .close-expanded:hover {
-  color: #B6D094; /* Olivine */
+  color: #B6D094;
 }
 
 .project-expanded-actions {
@@ -157,18 +153,17 @@
 .project-close-btn {
   padding: 0.7rem 1.3rem;
   background-color: transparent;
-  color: #F8F1FF; /* Magnolia */
-  border: 1px solid #626D58; /* Eerie */
+  color: #F8F1FF;
+  border: 1px solid #626D58;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .project-close-btn:hover {
-  background-color: #626D58; /* Eerie */
+  background-color: #626D58;
 }
 
-/* Responsividade - seguindo seu padrão */
 @media (max-width: 768px) {
   .project-card {
     padding: 1.2rem;

@@ -6,19 +6,27 @@ import roboticaImg from '../../assets/image/Tutor.png';
 const Projects = () => {
   const personalProjects = [
     {
-      title: 'API REST - Academia',
-      description: 'Sistema de gerenciamento para academias com Spring Boot',
-      expandedDescription: 'API RESTful desenvolvida com Spring Boot para gerenciar academias. Possui funcionalidades para cadastro e gerenciamento de alunos, instrutores, treinos, exercícios e avaliações físicas. Implementa arquitetura em camadas com DTOs, mapeamento de entidades e controle total das operações CRUD. Ideal para integrar com um frontend em React.',
-      technologies: ['Java', 'Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'Swagger'],
-      link: '#', // você pode substituir pelo link do repositório no GitHub
-      imageUrl: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
+      title: 'Market-Flow',
+      description: 'E-commerce com Arquitetura de Microsserviços, RabbitMQ e Spring Boot',
+      expandedDescription: 'Market-Flow é um sistema de e-commerce construído com uma **Arquitetura de Microsserviços** para garantir escalabilidade e desacoplamento. O projeto utiliza **Java Spring Boot** para a lógica de negócio, **RabbitMQ** como message broker para comunicação assíncrona entre os serviços e **MySQL** para o armazenamento de dados (padrão Database Per Service). \n\nOs 5 microsserviços centrais são: **Order**, **Stock**, **Payment**, **Status** e **Send**, cada um responsável por uma funcionalidade específica do fluxo de compra. A comunicação assíncrona via RabbitMQ é essencial para processar pedidos, pagamentos e atualizações de estoque de forma robusta e eficiente.',
+      technologies: ['Java', 'Spring Boot', 'RabbitMQ', 'Microsserviços', 'MySQL'],
+      link: 'https://github.com/abraao-borges/market-flow',
+      imageUrl: 'https://images.unsplash.com/photo-1542831371-29b0f74f940f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+    },
+    {
+      title: 'AcademiaApp',
+      description: 'Sistema Mobile Full-Stack para academias (Aluno e Admin), com arquitetura Offline-First.',
+      expandedDescription: 'Sistema completo de gerenciamento de academias construído com arquitetura **Offline-First**. O projeto consiste em dois aplicativos mobile desenvolvidos em **React Native/TypeScript** (para Aluno e Administrador) e uma API REST em **Java Spring Boot**. \n\nFuncionalidades principais: Gerenciamento completo de alunos/instrutores (CRUD), criação de treinos personalizados e registro de avaliações físicas. A abordagem Offline-First permite que os usuários acessem seus dados (treinos, exercícios, etc.) mesmo sem conexão ativa à internet, garantindo alta usabilidade. O backend utiliza **PostgreSQL**.',
+      technologies: ['React Native', 'TypeScript', 'Java', 'Spring Boot', 'PostgreSQL', 'Offline-First'],
+      link: 'https://github.com/RamonBent/academia-api',
+      imageUrl: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80' // Mantendo a imagem de academia
     },
     {
       title: 'Controlador de Frota',
       description: 'Sistema para gerenciamento de transportadora com Spring Boot e PostgreSQL',
       expandedDescription: 'Projeto desenvolvido com o objetivo de gerenciar uma transportadora, oferecendo controle sobre veículos, cargas, motoristas e viagens. A aplicação segue a arquitetura MVC, utiliza o banco de dados PostgreSQL e está documentada com Swagger. Desenvolvida em Spring Boot, a API REST contempla regras de negócio específicas para o setor de transportes. Futuramente, o projeto contará com um frontend dedicado e sistema de autenticação.',
       technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'Swagger', 'Arquitetura MVC'],
-      link: '#', // substitua com o link real do repositório
+      link: 'https://github.com/RamonBent/controladorDeFrota',
       imageUrl: 'https://images.unsplash.com/photo-1519638399535-1b036603ac77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
     },  
     {
@@ -26,6 +34,14 @@ const Projects = () => {
       description: 'Sistema de autenticação JWT com Spring Boot',
       expandedDescription: 'API robusta de autenticação com JWT, incluindo registro, login, recuperação de senha e verificação de email. Implementação de roles e permissions, rate limiting e documentação com Swagger.',
       technologies: ['Java', 'Spring Boot', 'JWT', 'PostgreSQL'],
+      link: '#',
+      imageUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+    },
+    {
+      title: 'CaixaSuper - Sistema de Gestão',
+      description: 'Solução completa para gestão de mercados (PDV, Estoque, Relatórios) em Java/Spring Boot.',
+      expandedDescription: 'O CaixaSuper é uma solução de software para otimizar a gestão de vendas e estoque em mercados de pequeno e médio porte. O sistema foi desenvolvido utilizando **Java Spring Boot** no backend para gerenciar a lógica de negócio (vendas, estoque, relatórios) e **PostgreSQL** como banco de dados. A interface gráfica (GUI) foi construída com **JavaFX**.\n\nFuncionalidades chave incluem: controle de estoque com alertas automáticos, registro automatizado de vendas com cálculo de troco, geração de relatórios gerenciais e módulo de fechamento de caixa. O projeto foca em oferecer uma ferramenta eficiente e intuitiva para o controle administrativo.',
+      technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'JavaFX', 'PDV', 'Estoque'],
       link: '#',
       imageUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
     }

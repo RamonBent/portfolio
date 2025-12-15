@@ -10,7 +10,7 @@ const Home = () => {
         <div className="hero-content">
           <h1>
             <span className="greeting">Olá, eu sou</span>
-            <span className="name">Ramon Bentoooo</span>
+            <span className="name">Ramon Bento</span>
           </h1>
           <h2 className="title">Backend Developer</h2>
           <p className="description">
@@ -18,7 +18,7 @@ const Home = () => {
             Atualmente explorando o mundo do frontend com React e TypeScript.
           </p>
           <div className="tech-stack">
-            {['Java', 'Spring Boot', 'PostgreSQL', 'React', 'TypeScript'].map((tech) => (
+            {['Java', 'Spring Boot', 'Sql', 'Jpa', 'Scrum', 'Kanban', 'PostgreSQL', 'React', 'TypeScript'].map((tech) => (
               <TechBadge key={tech} name={tech} />
             ))}
           </div>

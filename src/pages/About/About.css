@@ -60,18 +60,27 @@
   flex: 1;
   display: flex;
   justify-content: center;
+
+  margin-top: -5px;
 }
 
 .animation-placeholder {
-  width: 400px;
-  height: 400px;
-  background-color: #212738;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #F8F1FF; 
+  border-radius: 10px;
 }
+
+
+.animation-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #626D58;
+}
+
 
 @media (max-width: 1024px) {
   .about-section {
@@ -86,9 +95,8 @@
     order: 1;
     margin-bottom: 3rem;
   }
-
-  .animation-placeholder {
-    width: 300px;
-    height: 300px;
+  
+  .animation-image {
+    max-width: 250px; 
   }
 }

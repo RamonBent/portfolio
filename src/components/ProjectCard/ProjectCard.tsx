@@ -6,7 +6,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
-  link?: string;  // Tornando opcional
+  link?: string;
   expandedDescription?: string;
   imageUrl?: string;
 }
@@ -26,7 +26,7 @@ const ProjectCard = ({
       e.preventDefault()
       setIsExpanded(true)
     }
-    // Se o link for válido, o comportamento padrão do anchor tag ocorrerá
+
   }
 
   return (
