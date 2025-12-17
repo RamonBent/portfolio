@@ -42,9 +42,18 @@ const Projects = () => {
       description: 'Solução completa para gestão de mercados (PDV, Estoque, Relatórios) em Java/Spring Boot.',
       expandedDescription: 'O CaixaSuper é uma solução de software para otimizar a gestão de vendas e estoque em mercados de pequeno e médio porte. O sistema foi desenvolvido utilizando **Java Spring Boot** no backend para gerenciar a lógica de negócio (vendas, estoque, relatórios) e **PostgreSQL** como banco de dados. A interface gráfica (GUI) foi construída com **JavaFX**.\n\nFuncionalidades chave incluem: controle de estoque com alertas automáticos, registro automatizado de vendas com cálculo de troco, geração de relatórios gerenciais e módulo de fechamento de caixa. O projeto foca em oferecer uma ferramenta eficiente e intuitiva para o controle administrativo.',
       technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'JavaFX', 'PDV', 'Estoque'],
-      link: '#',
+      link: 'https://github.com/abraao-borges/caixa-super',
       imageUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-    }
+    },
+
+    {
+    title: 'Chat Noir',
+    description: 'Jogo de estratégia contra uma IA desafiadora baseada em algoritmos de busca.',
+    expandedDescription: 'O Chat Noir é um jogo de estratégia onde o objetivo é cercar um gato em um tabuleiro antes que ele escape. O grande destaque do projeto é a **Inteligência Artificial** do gato, desenvolvida em **Kotlin**. \n\nA IA utiliza o algoritmo **Minimax com Poda Alpha-Beta**, permitindo que o computador antecipe as jogadas do usuário e escolha a rota de fuga mais eficiente. Além disso, implementei uma **Função de Avaliação** personalizada que calcula a heurística baseada na distância do gato até as bordas, garantindo um nível de dificuldade elevado e performance otimizada para dispositivos móveis.',
+    technologies: ['Kotlin', 'Android SDK', 'Minimax Algorithm', 'IA'],
+    link: 'https://github.com/abraao-borges/chat-noir-android',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/luvi-2628f.firebasestorage.app/o/comprovantes%2FWhatsApp%20Image%202025-12-17%20at%2020.14.56.jpeg?alt=media&token=5f110dd8-b960-4d65-a3bb-a5e90ab36bd7'
+},
   ]
 
   const academicProjects = [
@@ -71,9 +80,10 @@ const Projects = () => {
       description: 'Pesquisa com foco em leitura remota de hidrômetros usando LoRa e visão computacional.',
       expandedDescription: 'Projeto de pesquisa que desenvolveu um protótipo para leitura automática de hidrômetros usando: 1) Visão computacional para reconhecer os dígitos e 2) Transmissão via LoRaWAN para envio dos dados. O sistema alcançou 98% de precisão nas leituras.',
       technologies: ['Python', 'OpenCV', 'LoRa', 'IoT'],
-      link: '#',
+      link: 'https://github.com/RamonBent/projetoHidrometro',
       imageUrl: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-    }
+    },
+
   ];
 
   return (
