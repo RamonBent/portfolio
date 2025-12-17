@@ -9,7 +9,7 @@ const Projects = () => {
       title: 'Market-Flow',
       description: 'E-commerce com Arquitetura de Microsserviços, RabbitMQ e Spring Boot',
       expandedDescription: 'Market-Flow é um sistema de e-commerce construído com uma **Arquitetura de Microsserviços** para garantir escalabilidade e desacoplamento. O projeto utiliza **Java Spring Boot** para a lógica de negócio, **RabbitMQ** como message broker para comunicação assíncrona entre os serviços e **MySQL** para o armazenamento de dados (padrão Database Per Service). \n\nOs 5 microsserviços centrais são: **Order**, **Stock**, **Payment**, **Status** e **Send**, cada um responsável por uma funcionalidade específica do fluxo de compra. A comunicação assíncrona via RabbitMQ é essencial para processar pedidos, pagamentos e atualizações de estoque de forma robusta e eficiente.',
-      technologies: ['Java', 'Spring Boot', 'RabbitMQ', 'Microsserviços', 'MySQL'],
+      technologies: ['Java', 'Spring Boot', 'RabbitMQ', 'Microsserviços', 'MySQL', 'Menssageria', 'Junit', 'Arquitetura MVC'],
       link: 'https://github.com/abraao-borges/market-flow',
       imageUrl: 'https://images.unsplash.com/photo-1542831371-29b0f74f940f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
     },
@@ -17,7 +17,7 @@ const Projects = () => {
       title: 'AcademiaApp',
       description: 'Sistema Mobile Full-Stack para academias (Aluno e Admin), com arquitetura Offline-First.',
       expandedDescription: 'Sistema completo de gerenciamento de academias construído com arquitetura **Offline-First**. O projeto consiste em dois aplicativos mobile desenvolvidos em **React Native/TypeScript** (para Aluno e Administrador) e uma API REST em **Java Spring Boot**. \n\nFuncionalidades principais: Gerenciamento completo de alunos/instrutores (CRUD), criação de treinos personalizados e registro de avaliações físicas. A abordagem Offline-First permite que os usuários acessem seus dados (treinos, exercícios, etc.) mesmo sem conexão ativa à internet, garantindo alta usabilidade. O backend utiliza **PostgreSQL**.',
-      technologies: ['React Native', 'TypeScript', 'Java', 'Spring Boot', 'PostgreSQL', 'Offline-First'],
+      technologies: ['React Native', 'TypeScript', 'Java', 'Spring Boot', 'PostgreSQL', 'Offline-First', 'MVC', 'REST API'],
       link: 'https://github.com/RamonBent/academia-api',
       imageUrl: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80' // Mantendo a imagem de academia
     },
@@ -41,7 +41,7 @@ const Projects = () => {
       title: 'CaixaSuper - Sistema de Gestão',
       description: 'Solução completa para gestão de mercados (PDV, Estoque, Relatórios) em Java/Spring Boot.',
       expandedDescription: 'O CaixaSuper é uma solução de software para otimizar a gestão de vendas e estoque em mercados de pequeno e médio porte. O sistema foi desenvolvido utilizando **Java Spring Boot** no backend para gerenciar a lógica de negócio (vendas, estoque, relatórios) e **PostgreSQL** como banco de dados. A interface gráfica (GUI) foi construída com **JavaFX**.\n\nFuncionalidades chave incluem: controle de estoque com alertas automáticos, registro automatizado de vendas com cálculo de troco, geração de relatórios gerenciais e módulo de fechamento de caixa. O projeto foca em oferecer uma ferramenta eficiente e intuitiva para o controle administrativo.',
-      technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'JavaFX', 'PDV', 'Estoque'],
+      technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'JavaFX', 'PDV', 'Estoque', 'MVC', 'JWT'],
       link: 'https://github.com/abraao-borges/caixa-super',
       imageUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
     },
@@ -50,7 +50,7 @@ const Projects = () => {
     title: 'Chat Noir',
     description: 'Jogo de estratégia contra uma IA desafiadora baseada em algoritmos de busca.',
     expandedDescription: 'O Chat Noir é um jogo de estratégia onde o objetivo é cercar um gato em um tabuleiro antes que ele escape. O grande destaque do projeto é a **Inteligência Artificial** do gato, desenvolvida em **Kotlin**. \n\nA IA utiliza o algoritmo **Minimax com Poda Alpha-Beta**, permitindo que o computador antecipe as jogadas do usuário e escolha a rota de fuga mais eficiente. Além disso, implementei uma **Função de Avaliação** personalizada que calcula a heurística baseada na distância do gato até as bordas, garantindo um nível de dificuldade elevado e performance otimizada para dispositivos móveis.',
-    technologies: ['Kotlin', 'Android SDK', 'Minimax Algorithm', 'IA'],
+    technologies: ['IA','Kotlin', 'Android SDK', 'Minimax Algorithm', 'MVVM'],
     link: 'https://github.com/abraao-borges/chat-noir-android',
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/luvi-2628f.firebasestorage.app/o/comprovantes%2FWhatsApp%20Image%202025-12-17%20at%2020.14.56.jpeg?alt=media&token=5f110dd8-b960-4d65-a3bb-a5e90ab36bd7'
 },
@@ -70,7 +70,7 @@ const Projects = () => {
       title: 'Tutor de Robótica',
       description: 'Atuação como tutor de robótica para alunos do ensino fundamental em escola pública.',
       expandedDescription: 'Durante o ano de 2024, atuei como tutor em oficinas de robótica dentro do sistema integral de uma escola pública da cidade de Pocinhos, com turmas do 6º ao 9º ano. As atividades faziam parte da grade complementar e aconteciam ao longo de todo o período letivo. Foram cerca de 8 horas semanais dedicadas às oficinas, além de tempo extra para planejamento das atividades. O projeto foi desafiador e muito enriquecedor, exigindo não apenas conhecimento técnico, mas também habilidades interpessoais, como empatia, paciência e trabalho em equipe — especialmente por envolver interação direta com outros profissionais da educação e com os alunos. Utilizamos o Arduino e a linguagem de blocos com Pictoblox para desenvolver projetos criativos e lúdicos, tornando o aprendizado de robótica acessível e divertido para os estudantes.',
-      technologies: ['Arduino', 'Pictoblox', 'Educação'],
+      technologies: ['Arduino', 'Pictoblox', 'Educação', 'C++', 'Robótica'],
       link: '#',
       imageUrl: roboticaImg
     },
